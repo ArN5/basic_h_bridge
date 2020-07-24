@@ -5001,15 +5001,15 @@ if transistor is off V node = 12 volts</text>
 <instance part="GND10" gate="1" x="-139.7" y="45.72" smashed="yes">
 <attribute name="VALUE" x="-139.7" y="45.466" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="J4" gate="G$1" x="-68.58" y="12.7" smashed="yes">
-<attribute name="NAME" x="-73.66" y="18.288" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="-73.66" y="5.334" size="1.778" layer="96" font="vector"/>
+<instance part="J4" gate="G$1" x="-63.5" y="12.7" smashed="yes">
+<attribute name="NAME" x="-68.58" y="18.288" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="-68.58" y="5.334" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="SUPPLY9" gate="G$1" x="-58.42" y="15.24" smashed="yes">
-<attribute name="VALUE" x="-58.42" y="18.034" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY9" gate="G$1" x="-53.34" y="15.24" smashed="yes">
+<attribute name="VALUE" x="-53.34" y="18.034" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="GND11" gate="1" x="-58.42" y="7.62" smashed="yes">
-<attribute name="VALUE" x="-58.42" y="7.366" size="1.778" layer="96" align="top-center"/>
+<instance part="GND11" gate="1" x="-53.34" y="7.62" smashed="yes">
+<attribute name="VALUE" x="-53.34" y="7.366" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="Y2" gate="G$1" x="-149.86" y="38.1" smashed="yes">
 <attribute name="NAME" x="-153.162" y="35.56" size="1.778" layer="95" font="vector" align="center-right"/>
@@ -5156,6 +5156,10 @@ if transistor is off V node = 12 volts</text>
 <pinref part="J1" gate="G$1" pin="3"/>
 <junction x="-38.1" y="38.1"/>
 <wire x1="-38.1" y1="38.1" x2="-27.94" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="U1" gate="U1" pin="PB2(SS/OC1B)"/>
+<wire x1="-88.9" y1="12.7" x2="-81.28" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="-81.28" y1="12.7" x2="-81.28" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="-81.28" y1="38.1" x2="-38.1" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -5240,6 +5244,15 @@ if transistor is off V node = 12 volts</text>
 <pinref part="J1" gate="G$1" pin="4"/>
 <junction x="-38.1" y="40.64"/>
 <wire x1="-38.1" y1="40.64" x2="-27.94" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="J4" gate="G$1" pin="4"/>
+<wire x1="-53.34" y1="12.7" x2="-50.8" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="12.7" x2="-50.8" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="22.86" x2="-78.74" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="22.86" x2="-78.74" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="U1" gate="U1" pin="PB3(MOSI/OC2)"/>
+<wire x1="-78.74" y1="10.16" x2="-88.9" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="22.86" x2="-50.8" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="40.64" x2="-38.1" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="Q4_INPUT" class="0">
@@ -5252,6 +5265,10 @@ if transistor is off V node = 12 volts</text>
 <pinref part="J1" gate="G$1" pin="1"/>
 <junction x="-38.1" y="33.02"/>
 <wire x1="-38.1" y1="33.02" x2="-27.94" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="U1" gate="U1" pin="PD6(AIN0)"/>
+<wire x1="-88.9" y1="25.4" x2="-78.74" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="25.4" x2="-78.74" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="33.02" x2="-38.1" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="Q3_INPUT" class="0">
@@ -5266,6 +5283,10 @@ if transistor is off V node = 12 volts</text>
 <pinref part="J1" gate="G$1" pin="2"/>
 <junction x="-38.1" y="35.56"/>
 <wire x1="-38.1" y1="35.56" x2="-27.94" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="U1" gate="U1" pin="PB1(OC1A)"/>
+<wire x1="-88.9" y1="15.24" x2="-83.82" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="-83.82" y1="15.24" x2="-83.82" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="-83.82" y1="35.56" x2="-38.1" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -5311,8 +5332,8 @@ if transistor is off V node = 12 volts</text>
 <junction x="-142.24" y="63.5"/>
 <pinref part="S1" gate="G$1" pin="2"/>
 <pinref part="J4" gate="G$1" pin="5"/>
-<wire x1="-76.2" y1="10.16" x2="-76.2" y2="0" width="0.1524" layer="91"/>
-<wire x1="-76.2" y1="0" x2="-119.38" y2="0" width="0.1524" layer="91"/>
+<wire x1="-71.12" y1="10.16" x2="-71.12" y2="0" width="0.1524" layer="91"/>
+<wire x1="-71.12" y1="0" x2="-119.38" y2="0" width="0.1524" layer="91"/>
 <wire x1="-119.38" y1="0" x2="-119.38" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="-119.38" y1="71.12" x2="-134.62" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="-134.62" y1="71.12" x2="-134.62" y2="63.5" width="0.1524" layer="91"/>
@@ -5329,30 +5350,19 @@ if transistor is off V node = 12 volts</text>
 <net name="N$15" class="0">
 <segment>
 <pinref part="U1" gate="U1" pin="PB4(MISO)"/>
-<wire x1="-88.9" y1="7.62" x2="-81.28" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="-81.28" y1="7.62" x2="-81.28" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="-88.9" y1="7.62" x2="-76.2" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="-76.2" y1="7.62" x2="-76.2" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="J4" gate="G$1" pin="1"/>
-<wire x1="-81.28" y1="15.24" x2="-76.2" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="-76.2" y1="15.24" x2="-71.12" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="0">
 <segment>
 <pinref part="U1" gate="U1" pin="PB5(SCK)"/>
-<wire x1="-88.9" y1="5.08" x2="-78.74" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="-78.74" y1="5.08" x2="-78.74" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="-88.9" y1="5.08" x2="-73.66" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="-73.66" y1="5.08" x2="-73.66" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="J4" gate="G$1" pin="3"/>
-<wire x1="-78.74" y1="12.7" x2="-76.2" y2="12.7" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="J4" gate="G$1" pin="4"/>
-<wire x1="-58.42" y1="12.7" x2="-50.8" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="-50.8" y1="12.7" x2="-50.8" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="-50.8" y1="22.86" x2="-83.82" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="-83.82" y1="22.86" x2="-83.82" y2="10.16" width="0.1524" layer="91"/>
-<pinref part="U1" gate="U1" pin="PB3(MOSI/OC2)"/>
-<wire x1="-83.82" y1="10.16" x2="-88.9" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="-73.66" y1="12.7" x2="-71.12" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
