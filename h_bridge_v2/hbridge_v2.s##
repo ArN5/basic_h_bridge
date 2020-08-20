@@ -6561,6 +6561,7 @@ if transistor is off V node = 12 volts</text>
 <wire x1="-88.9" y1="12.7" x2="-81.28" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="-81.28" y1="12.7" x2="-81.28" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="-81.28" y1="38.1" x2="-38.1" y2="38.1" width="0.1524" layer="91"/>
+<label x="-86.36" y="12.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -6655,6 +6656,7 @@ if transistor is off V node = 12 volts</text>
 <wire x1="-50.8" y1="22.86" x2="-50.8" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="-50.8" y1="40.64" x2="-38.1" y2="40.64" width="0.1524" layer="91"/>
 <junction x="-50.8" y="22.86"/>
+<label x="-86.36" y="10.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="Q4_INPUT" class="0">
@@ -6671,6 +6673,7 @@ if transistor is off V node = 12 volts</text>
 <wire x1="-88.9" y1="25.4" x2="-78.74" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="-78.74" y1="25.4" x2="-78.74" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="-78.74" y1="33.02" x2="-38.1" y2="33.02" width="0.1524" layer="91"/>
+<label x="-86.36" y="25.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="Q3_INPUT" class="0">
@@ -6689,6 +6692,7 @@ if transistor is off V node = 12 volts</text>
 <wire x1="-88.9" y1="15.24" x2="-83.82" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="-83.82" y1="15.24" x2="-83.82" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="-83.82" y1="35.56" x2="-38.1" y2="35.56" width="0.1524" layer="91"/>
+<label x="-86.36" y="15.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -6782,13 +6786,14 @@ if transistor is off V node = 12 volts</text>
 <wire x1="-73.66" y1="12.7" x2="-71.12" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$17" class="0">
+<net name="LED_PIN" class="0">
 <segment>
 <pinref part="U1" gate="U1" pin="PD7(AIN1)"/>
 <wire x1="-88.9" y1="22.86" x2="-86.36" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="-86.36" y1="22.86" x2="-86.36" y2="-7.62" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="A"/>
 <wire x1="-86.36" y1="-7.62" x2="-76.2" y2="-7.62" width="0.1524" layer="91"/>
+<label x="-86.36" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$18" class="0">
